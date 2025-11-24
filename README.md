@@ -1,4 +1,4 @@
-# Customer Churn Prediction System
+# 📊 Customer Churn Prediction System
 
 A comprehensive machine learning system that predicts customer churn in the telecom industry with an interactive Streamlit dashboard. This project features real-time predictions, model interpretability using SHAP, and actionable retention recommendations.
 
@@ -7,18 +7,18 @@ A comprehensive machine learning system that predicts customer churn in the tele
 ![Machine Learning](https://img.shields.io/badge/ML-XGBoost%20%7C%20RandomForest-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## Features
+##  Features
 
-- **Interactive Dashboard**: Beautiful blue and white themed interface
-- **Multiple ML Models**: Choose between RandomForest and XGBoost
-- **Real-Time Predictions**: Predict churn probability for individual customers
-- **Model Interpretability**: SHAP values for understanding feature importance
-- **Business Insights**: Actionable recommendations for retention strategies
-- **Performance Metrics**: Comprehensive model evaluation with ROC curves and confusion matrices
+- Interactive Dashboard: Beautiful blue and white themed interface
+- Multiple ML Models: Choose between RandomForest and XGBoost
+- Real-Time Predictions: Predict churn probability for individual customers
+- Model Interpretability: SHAP values for understanding feature importance
+- Business Insights: Actionable recommendations for retention strategies
+- Performance Metrics: Comprehensive model evaluation with ROC curves and confusion matrices
 
-## Project Structure
+##  Project Structure
 
-```
+
 customer-churn/
 │
 ├── Data/
@@ -29,9 +29,9 @@ customer-churn/
 ├── README.md                       # Project documentation
 ├── .gitignore                      # Git ignore file
 └── model.pkl                       # Trained model (generated after training)
-```
 
-## Getting Started
+
+##  Getting Started
 
 ### Prerequisites
 
@@ -43,34 +43,34 @@ customer-churn/
 
 Open your terminal/command prompt and run:
 
-```bash
+bash
 git clone https://github.com/HayaShahid/customer-churn.git
 cd customer-churn
-```
+
 
 ### Step 2: Create a Virtual Environment
 
-**On Windows:**
-```bash
+On Windows:
+bash
 python -m venv venv
 venv\Scripts\activate
-```
 
-**On macOS/Linux:**
-```bash
+
+On macOS/Linux:
+bash
 python3 -m venv venv
 source venv/bin/activate
-```
+
 
 ### Step 3: Install Dependencies
 
-```bash
+bash
 pip install -r requirements.txt
-```
+
 
 ### Step 4: Prepare Your Data
 
-1. Ensure your dataset `telecom_churn.csv` is in the `Data` folder
+1. Ensure your dataset telecom_churn.csv is in the Data folder
 2. The CSV should contain these columns:
    - State
    - Account length
@@ -95,11 +95,11 @@ pip install -r requirements.txt
 
 ### Step 5: Run the Application
 
-```bash
+bash
 streamlit run app.py
-```
 
-The application will open in your default web browser at `http://localhost:8501`
+
+The application will open in your default web browser at http://localhost:8501
 
 ##  Using the Dashboard
 
@@ -130,109 +130,57 @@ The application will open in your default web browser at `http://localhost:8501`
 
 ##  Tech Stack
 
-- **Python**: Core programming language
-- **Streamlit**: Web dashboard framework
-- **Pandas & NumPy**: Data manipulation
-- **Scikit-learn**: Machine learning algorithms
-- **XGBoost**: Gradient boosting framework
-- **SHAP**: Model interpretability
-- **Plotly**: Interactive visualizations
-- **Matplotlib & Seaborn**: Additional plotting
+- Python: Core programming language
+- Streamlit: Web dashboard framework
+- Pandas & NumPy: Data manipulation
+- Scikit-learn: Machine learning algorithms
+- XGBoost: Gradient boosting framework
+- SHAP: Model interpretability
+- Plotly: Interactive visualizations
+- Matplotlib & Seaborn: Additional plotting
 
 ##  Model Performance
 
 The system achieves:
-- **Accuracy**: ~85-90%
-- **Precision**: ~80-85%
-- **Recall**: ~75-80%
-- **F1-Score**: ~77-82%
+- Accuracy: ~85-90%
+- Precision: ~80-85%
+- Recall: ~75-80%
+- F1-Score: ~77-82%
 
 ##  Key Insights
 
-1. **Customer Service Calls**: Customers with 4+ service calls are at high risk
-2. **International Plan**: Higher churn rate among international plan users
-3. **Day Charges**: High day charges correlate with increased churn
-4. **Account Length**: Newer accounts show higher churn probability
+1. Customer Service Calls: Customers with 4+ service calls are at high risk
+2. International Plan: Higher churn rate among international plan users
+3. Day Charges: High day charges correlate with increased churn
+4. Account Length: Newer accounts show higher churn probability
 
 ##  Uploading to GitHub from VS Code
 
 ### Method 1: Using VS Code Interface
 
-1. **Initialize Git Repository**:
+1. Initialize Git Repository:
    - Open VS Code
    - Open Terminal (`Ctrl + ` ` or View → Terminal)
-   - Run: `git init`
+   - Run: git init
 
-2. **Create .gitignore**:
-   Create a file named `.gitignore` with:
-   ```
+2. Create .gitignore:
+   Create a file named .gitignore with:
+   
    venv/
-   __pycache__/
+   _pycache_/
    *.pyc
    *.pkl
    .env
    .DS_Store
    *.log
-   ```
-
-3. **Stage and Commit**:
-   - Click on Source Control icon (left sidebar)
-   - Click "+" next to files to stage them
-   - Enter commit message: "Initial commit: Customer Churn Prediction System"
-   - Click the checkmark to commit
-
-4. **Connect to GitHub**:
-   ```bash
-   git remote add origin https://github.com/HayaShahid/customer-churn.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-### Method 2: Using Terminal
-
-```bash
-# Initialize repository
-git init
-
-# Add all files
-git add .
-
-# Commit changes
-git commit -m "Initial commit: Customer Churn Prediction System"
-
-# Connect to GitHub
-git remote add origin https://github.com/HayaShahid/customer-churn.git
-
-# Push to GitHub
-git branch -M main
-git push -u origin main
-```
-
-### Updating Your Repository Later
-
-```bash
-# Stage changes
-git add .
-
-# Commit changes
-git commit -m "Your commit message here"
-
-# Push to GitHub
-git push
-```
-
-##  Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+   
 
 ##  License
 
 This project is licensed under the MIT License.
 
 ##  Author
-
-**Haya Shahid**
-- GitHub: [@HayaShahid](https://github.com/HayaShahid)
+Haya Shahid
 
 ##  Acknowledgments
 
@@ -246,4 +194,5 @@ For questions or feedback, please open an issue on GitHub.
 
 ---
 
-** If you find this project helpful, please consider giving it a star!**
+
+* If you find this project helpful, please consider giving it a star!*
